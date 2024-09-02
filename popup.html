@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leads Tracker app</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Leads Tracker</h2>
+        <section class="section-container input-container">
+            <input type="text" id="leads-input" placeholder="https://www.example.com">
+            <div class="btn-container">
+                <button class="btn btn-save" id="save">Save</button>
+                <span class="msg" id="save-msg"></span>
+                <button class="btn btn-save-tab" id="save-tab">Save Tab</button>
+                <span class="msg" id="tab-msg"></span>
+                <button class="btn btn-delete" id="delete" title="(Double click to delete)">DELETE ALL</button>
+                <span class="msg" id="delete-msg"></span>
+            </div>
+        </section>
+        <section class="section-container values-container" id="record-section">
+            <h3>Saved Records</h3>
+            <ul id="record-list">
+            </ul>
+        </section>
+    </div>
+    <script src="popup.js" defer></script>
+</body>
+</html>
